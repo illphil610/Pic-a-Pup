@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026920583A4500AFA47F /* AppDelegate.swift */; };
+		D433026C20583A4500AFA47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026B20583A4500AFA47F /* ViewController.swift */; };
+		D433026F20583A4500AFA47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D433026D20583A4500AFA47F /* Main.storyboard */; };
+		D433027120583A4500AFA47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D433027020583A4500AFA47F /* Assets.xcassets */; };
+		D433027420583A4500AFA47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D433027220583A4500AFA47F /* LaunchScreen.storyboard */; };
+		D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */; };
+		D433028A20583A4500AFA47F /* Pic_a_PupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D433027B20583A4500AFA47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D433025E20583A4500AFA47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D433026520583A4500AFA47F;
+			remoteInfo = "Pic-a-Pup";
+		};
+		D433028620583A4500AFA47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D433025E20583A4500AFA47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D433026520583A4500AFA47F;
+			remoteInfo = "Pic-a-Pup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D433026620583A4500AFA47F /* Pic-a-Pup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pic-a-Pup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D433026920583A4500AFA47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D433026B20583A4500AFA47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D433026E20583A4500AFA47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D433027020583A4500AFA47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D433027320583A4500AFA47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D433027520583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D433027A20583A4500AFA47F /* Pic-a-PupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pic-a-PupTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic_a_PupTests.swift; sourceTree = "<group>"; };
+		D433028020583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D433028520583A4500AFA47F /* Pic-a-PupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pic-a-PupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic_a_PupUITests.swift; sourceTree = "<group>"; };
+		D433028B20583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D433026320583A4500AFA47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433027720583A4500AFA47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433028220583A4500AFA47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D433025D20583A4500AFA47F = {
+			isa = PBXGroup;
+			children = (
+				D433026820583A4500AFA47F /* Pic-a-Pup */,
+				D433027D20583A4500AFA47F /* Pic-a-PupTests */,
+				D433028820583A4500AFA47F /* Pic-a-PupUITests */,
+				D433026720583A4500AFA47F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D433026720583A4500AFA47F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D433026620583A4500AFA47F /* Pic-a-Pup.app */,
+				D433027A20583A4500AFA47F /* Pic-a-PupTests.xctest */,
+				D433028520583A4500AFA47F /* Pic-a-PupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D433026820583A4500AFA47F /* Pic-a-Pup */ = {
+			isa = PBXGroup;
+			children = (
+				D433026920583A4500AFA47F /* AppDelegate.swift */,
+				D433026B20583A4500AFA47F /* ViewController.swift */,
+				D433026D20583A4500AFA47F /* Main.storyboard */,
+				D433027020583A4500AFA47F /* Assets.xcassets */,
+				D433027220583A4500AFA47F /* LaunchScreen.storyboard */,
+				D433027520583A4500AFA47F /* Info.plist */,
+			);
+			path = "Pic-a-Pup";
+			sourceTree = "<group>";
+		};
+		D433027D20583A4500AFA47F /* Pic-a-PupTests */ = {
+			isa = PBXGroup;
+			children = (
+				D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */,
+				D433028020583A4500AFA47F /* Info.plist */,
+			);
+			path = "Pic-a-PupTests";
+			sourceTree = "<group>";
+		};
+		D433028820583A4500AFA47F /* Pic-a-PupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */,
+				D433028B20583A4500AFA47F /* Info.plist */,
+			);
+			path = "Pic-a-PupUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D433026520583A4500AFA47F /* Pic-a-Pup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D433028E20583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-Pup" */;
+			buildPhases = (
+				D433026220583A4500AFA47F /* Sources */,
+				D433026320583A4500AFA47F /* Frameworks */,
+				D433026420583A4500AFA47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pic-a-Pup";
+			productName = "Pic-a-Pup";
+			productReference = D433026620583A4500AFA47F /* Pic-a-Pup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D433027920583A4500AFA47F /* Pic-a-PupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D433029120583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-PupTests" */;
+			buildPhases = (
+				D433027620583A4500AFA47F /* Sources */,
+				D433027720583A4500AFA47F /* Frameworks */,
+				D433027820583A4500AFA47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D433027C20583A4500AFA47F /* PBXTargetDependency */,
+			);
+			name = "Pic-a-PupTests";
+			productName = "Pic-a-PupTests";
+			productReference = D433027A20583A4500AFA47F /* Pic-a-PupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D433028420583A4500AFA47F /* Pic-a-PupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D433029420583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-PupUITests" */;
+			buildPhases = (
+				D433028120583A4500AFA47F /* Sources */,
+				D433028220583A4500AFA47F /* Frameworks */,
+				D433028320583A4500AFA47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D433028720583A4500AFA47F /* PBXTargetDependency */,
+			);
+			name = "Pic-a-PupUITests";
+			productName = "Pic-a-PupUITests";
+			productReference = D433028520583A4500AFA47F /* Pic-a-PupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D433025E20583A4500AFA47F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Philip;
+				TargetAttributes = {
+					D433026520583A4500AFA47F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D433027920583A4500AFA47F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D433026520583A4500AFA47F;
+					};
+					D433028420583A4500AFA47F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D433026520583A4500AFA47F;
+					};
+				};
+			};
+			buildConfigurationList = D433026120583A4500AFA47F /* Build configuration list for PBXProject "Pic-a-Pup" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D433025D20583A4500AFA47F;
+			productRefGroup = D433026720583A4500AFA47F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D433026520583A4500AFA47F /* Pic-a-Pup */,
+				D433027920583A4500AFA47F /* Pic-a-PupTests */,
+				D433028420583A4500AFA47F /* Pic-a-PupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D433026420583A4500AFA47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D433027420583A4500AFA47F /* LaunchScreen.storyboard in Resources */,
+				D433027120583A4500AFA47F /* Assets.xcassets in Resources */,
+				D433026F20583A4500AFA47F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433027820583A4500AFA47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433028320583A4500AFA47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D433026220583A4500AFA47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D433026C20583A4500AFA47F /* ViewController.swift in Sources */,
+				D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433027620583A4500AFA47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D433028120583A4500AFA47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D433028A20583A4500AFA47F /* Pic_a_PupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D433027C20583A4500AFA47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D433026520583A4500AFA47F /* Pic-a-Pup */;
+			targetProxy = D433027B20583A4500AFA47F /* PBXContainerItemProxy */;
+		};
+		D433028720583A4500AFA47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D433026520583A4500AFA47F /* Pic-a-Pup */;
+			targetProxy = D433028620583A4500AFA47F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D433026D20583A4500AFA47F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D433026E20583A4500AFA47F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D433027220583A4500AFA47F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D433027320583A4500AFA47F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D433028C20583A4500AFA47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D433028D20583A4500AFA47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D433028F20583A4500AFA47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-Pup/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-Pup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D433029020583A4500AFA47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-Pup/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-Pup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D433029220583A4500AFA47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-PupTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-PupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pic-a-Pup.app/Pic-a-Pup";
+			};
+			name = Debug;
+		};
+		D433029320583A4500AFA47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-PupTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-PupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pic-a-Pup.app/Pic-a-Pup";
+			};
+			name = Release;
+		};
+		D433029520583A4500AFA47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-PupUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-PupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pic-a-Pup";
+			};
+			name = Debug;
+		};
+		D433029620583A4500AFA47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				INFOPLIST_FILE = "Pic-a-PupUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pic-a-pup.Pic-a-PupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pic-a-Pup";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D433026120583A4500AFA47F /* Build configuration list for PBXProject "Pic-a-Pup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D433028C20583A4500AFA47F /* Debug */,
+				D433028D20583A4500AFA47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D433028E20583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-Pup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D433028F20583A4500AFA47F /* Debug */,
+				D433029020583A4500AFA47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D433029120583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-PupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D433029220583A4500AFA47F /* Debug */,
+				D433029320583A4500AFA47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D433029420583A4500AFA47F /* Build configuration list for PBXNativeTarget "Pic-a-PupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D433029520583A4500AFA47F /* Debug */,
+				D433029620583A4500AFA47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D433025E20583A4500AFA47F /* Project object */;
+}
