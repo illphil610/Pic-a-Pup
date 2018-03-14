@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
   - Firebase/Auth (4.10.1):
     - Firebase/Core
     - FirebaseAuth (= 4.4.4)
@@ -62,17 +64,43 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.5.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+  - SwiftLocation (3.1.0):
+    - SwiftyJSON (~> 4.0.0-alpha.1)
+  - SwiftyCam (2.7.0)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - AlamofireImage
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Messaging
   - Firebase/Storage
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0.0)
+  - SwiftLocation
+  - SwiftyCam (from `https://github.com/Awalz/SwiftyCam.git`, branch `Swift4`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SwiftyCam:
+    :branch: Swift4
+    :git: https://github.com/Awalz/SwiftyCam.git
+
+CHECKOUT OPTIONS:
+  SwiftyCam:
+    :commit: 85d713d643159cda72db2f3e230777af50cded94
+    :git: https://github.com/Awalz/SwiftyCam.git
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
@@ -86,7 +114,13 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLocation: 8f5ef4f510a45e43239de57a3145b3669301e898
+  SwiftyCam: 7c826b73a5b208677aee29390582c771bf748661
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: d6f107933b18b1e383f13eb0c8912b6c3d147cdf
+PODFILE CHECKSUM: f6dacdc09eddb45971ece2d822d89a09248ddccb
 
 COCOAPODS: 1.4.0
