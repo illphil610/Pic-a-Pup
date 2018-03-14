@@ -6,6 +6,11 @@ target 'Pic-a-Pup' do
   use_frameworks!
 
 pod 'Firebase/Core'
+pod 'Firebase/Storage'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Messaging'
+pod 'Alamofire', '~> 4.7'
 
   # Pods for Pic-a-Pup
 
