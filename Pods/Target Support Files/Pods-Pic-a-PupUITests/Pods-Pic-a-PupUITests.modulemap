@@ -1,0 +1,6 @@
+framework module Pods_Pic_a_PupUITests {
+  umbrella header "Pods-Pic-a-PupUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
