@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0ky-cs-2lN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qos-ph-rJc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         <!--Menu View Controller-->
         <scene sceneID="yeX-DY-fXr">
             <objects>
-                <viewController id="qos-ph-rJc" customClass="MenuViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qos-ph-rJc" customClass="MenuViewController" customModule="Pic_a_Pup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Vx-CQ-nab"/>
                         <viewControllerLayoutGuide type="bottom" id="EJg-1B-r4a"/>
@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-02-j6m" customClass="RoundedWhiteButton" customModule="FirebaseApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-02-j6m" customClass="RoundedWhiteButton" customModule="Pic_a_Pup" customModuleProvider="target">
                                 <rect key="frame" x="24" y="499" width="327" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -40,7 +40,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-s3-y7o" customClass="RoundedWhiteButton" customModule="FirebaseApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-s3-y7o" customClass="RoundedWhiteButton" customModule="Pic_a_Pup" customModuleProvider="target">
                                 <rect key="frame" x="24" y="579" width="327" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -81,9 +81,9 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="GSs-r5-4Ok"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="loginButton" destination="wEy-02-j6m" id="tGJ-Zw-InL"/>
-                        <outlet property="signupButton" destination="PBI-s3-y7o" id="rtn-p4-2jr"/>
-                        <segue destination="YVz-Vv-G2i" kind="show" identifier="toMainScreen" animates="NO" id="CRM-RF-KKm">
+                        <outlet property="loginButton" destination="wEy-02-j6m" id="Iz3-UR-FGJ"/>
+                        <outlet property="signupButton" destination="PBI-s3-y7o" id="7wf-Fd-i0i"/>
+                        <segue destination="YVz-Vv-G2i" kind="show" identifier="toHomeScreen" animates="NO" id="CRM-RF-KKm">
                             <nil key="action"/>
                         </segue>
                     </connections>
@@ -95,7 +95,7 @@
         <!--Login View Controller-->
         <scene sceneID="Jne-cs-3BV">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GNg-s4-Nxa" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GNg-s4-Nxa" customClass="LoginViewController" customModule="Pic_a_Pup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wfg-x5-2jQ"/>
                         <viewControllerLayoutGuide type="bottom" id="keS-A1-uHt"/>
@@ -227,9 +227,9 @@
                         <viewLayoutGuide key="safeArea" id="Ae1-Ng-Hhb"/>
                     </view>
                     <connections>
-                        <outlet property="dismissButton" destination="enb-65-kez" id="VPE-Rb-im2"/>
-                        <outlet property="emailField" destination="Piz-uO-VPU" id="Xqr-rL-x5Y"/>
-                        <outlet property="passwordField" destination="gkh-Pf-IJy" id="IdM-Y1-QYx"/>
+                        <outlet property="dismissButton" destination="enb-65-kez" id="2gD-hR-wcj"/>
+                        <outlet property="emailField" destination="Piz-uO-VPU" id="svp-it-7kY"/>
+                        <outlet property="passwordField" destination="gkh-Pf-IJy" id="e81-xv-07g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufs-E8-RWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,7 +239,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="5Nx-wD-Ayk">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iFR-Wf-CNF" customClass="SignUpViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iFR-Wf-CNF" customClass="SignUpViewController" customModule="Pic_a_Pup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4JA-A9-z0e"/>
                         <viewControllerLayoutGuide type="bottom" id="cW6-co-Zg6"/>
@@ -406,12 +406,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afK-aQ-BLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="385"/>
+            <point key="canvasLocation" x="2644" y="529"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="CVd-i9-1lE">
             <objects>
-                <viewController id="vnq-hK-RH0" sceneMemberID="viewController">
+                <viewController id="vnq-hK-RH0" customClass="HomeViewController" customModule="Pic_a_Pup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sFM-pe-jJN"/>
                         <viewControllerLayoutGuide type="bottom" id="4Oh-CU-K6n"/>
@@ -434,65 +434,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LLN-Pp-W04"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jXQ-TI-Hlu"/>
+                    <navigationItem key="navigationItem" id="jXQ-TI-Hlu">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="brk-kB-w61">
+                            <connections>
+                                <action selector="handleLogout:" destination="vnq-hK-RH0" id="xeP-fL-ffq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nE-Wg-ciN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4183" y="113"/>
-        </scene>
-        <!--InitialViewController-->
-        <scene sceneID="6ab-wZ-pIY">
-            <objects>
-                <viewController title="InitialViewController" id="0ky-cs-2lN" customClass="InitialViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jb1-sS-pfp"/>
-                        <viewControllerLayoutGuide type="bottom" id="Du1-xm-LFN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="W4x-sr-qzB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-uP-lxN">
-                                <rect key="frame" x="0.0" y="83.5" width="375" height="0.5"/>
-                                <color key="backgroundColor" white="0.79882211550000004" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="0.5" id="ir5-q4-2hx"/>
-                                </constraints>
-                            </view>
-                            <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-sy-XTn">
-                                <rect key="frame" x="0.0" y="618" width="375" height="0.5"/>
-                                <color key="backgroundColor" white="0.79882211550000004" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="0.5" id="L3I-iM-1mS"/>
-                                </constraints>
-                            </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-6X-u2e">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="g4c-uP-lxN" secondAttribute="trailing" id="4nj-Lh-q4Q"/>
-                            <constraint firstAttribute="trailing" secondItem="NDs-sy-XTn" secondAttribute="trailing" id="6hv-A4-KVe"/>
-                            <constraint firstItem="NDs-sy-XTn" firstAttribute="leading" secondItem="W4x-sr-qzB" secondAttribute="leading" id="Nhz-bz-Nba"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="NDs-sy-XTn" secondAttribute="bottom" constant="48.5" id="Ofh-yJ-Lzr"/>
-                            <constraint firstItem="EOR-6X-u2e" firstAttribute="centerX" secondItem="W4x-sr-qzB" secondAttribute="centerX" id="iui-Mw-71p"/>
-                            <constraint firstItem="EOR-6X-u2e" firstAttribute="centerY" secondItem="W4x-sr-qzB" secondAttribute="centerY" id="m97-Sg-US0"/>
-                            <constraint firstItem="g4c-uP-lxN" firstAttribute="top" secondItem="W4x-sr-qzB" secondAttribute="topMargin" constant="63.5" id="vhe-Cj-KVU"/>
-                            <constraint firstItem="g4c-uP-lxN" firstAttribute="leading" secondItem="W4x-sr-qzB" secondAttribute="leading" id="yN7-oY-O1v"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Koa-Ck-XYA"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mTV-TZ-GpJ"/>
-                    <connections>
-                        <segue destination="qos-ph-rJc" kind="show" identifier="toMenuScreen" animates="NO" id="mWq-Qd-0vZ">
-                            <nil key="action"/>
-                        </segue>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4jo-Xv-L7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1031" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GNn-fR-CKK">

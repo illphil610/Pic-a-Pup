@@ -11,8 +11,7 @@
 		6C0B9A4DF78710345741CB51 /* Pods_Pic_a_PupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C615068A318D743738BE3391 /* Pods_Pic_a_PupUITests.framework */; };
 		7281EA5871449152FC616950 /* Pods_Pic_a_PupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5A292D295DE0F40F99A6A8 /* Pods_Pic_a_PupTests.framework */; };
 		D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026920583A4500AFA47F /* AppDelegate.swift */; };
-		D433026C20583A4500AFA47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026B20583A4500AFA47F /* ViewController.swift */; };
-		D433026F20583A4500AFA47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D433026D20583A4500AFA47F /* Main.storyboard */; };
+		D433026C20583A4500AFA47F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026B20583A4500AFA47F /* MenuViewController.swift */; };
 		D433027120583A4500AFA47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D433027020583A4500AFA47F /* Assets.xcassets */; };
 		D433027420583A4500AFA47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D433027220583A4500AFA47F /* LaunchScreen.storyboard */; };
 		D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */; };
@@ -20,6 +19,19 @@
 		D466111F205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
 		D4661120205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
 		D4661121205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
+		D467C912205B1D3600817CD0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C911205B1D3600817CD0 /* SignUpViewController.swift */; };
+		D467C914205B1F9D00817CD0 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C913205B1F9D00817CD0 /* Admin.swift */; };
+		D467C916205B1FB300817CD0 /* Lovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C915205B1FB300817CD0 /* Lovable.swift */; };
+		D467C918205B1FE300817CD0 /* DogLover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C917205B1FE300817CD0 /* DogLover.swift */; };
+		D467C91A205B1FF800817CD0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C919205B1FF800817CD0 /* Dog.swift */; };
+		D467C91C205B200700817CD0 /* DogSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C91B205B200700817CD0 /* DogSearchResult.swift */; };
+		D467C91E205B201500817CD0 /* ModelSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C91D205B201500817CD0 /* ModelSearchRequest.swift */; };
+		D4806D49205B0A6100EB9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4806D48205B0A6100EB9742 /* Main.storyboard */; };
+		D4806D4F205B0F6100EB9742 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D4E205B0F6100EB9742 /* User.swift */; };
+		D4806D51205B109400EB9742 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D50205B109400EB9742 /* Utility.swift */; };
+		D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */; };
+		D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D54205B11EF00EB9742 /* LoginViewController.swift */; };
+		D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +60,7 @@
 		C615068A318D743738BE3391 /* Pods_Pic_a_PupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_PupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D433026620583A4500AFA47F /* Pic-a-Pup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pic-a-Pup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D433026920583A4500AFA47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D433026B20583A4500AFA47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D433026E20583A4500AFA47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D433026B20583A4500AFA47F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D433027020583A4500AFA47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D433027320583A4500AFA47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D433027520583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +71,19 @@
 		D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic_a_PupUITests.swift; sourceTree = "<group>"; };
 		D433028B20583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D466111E205993FD004657EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D467C911205B1D3600817CD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D467C913205B1F9D00817CD0 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		D467C915205B1FB300817CD0 /* Lovable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lovable.swift; sourceTree = "<group>"; };
+		D467C917205B1FE300817CD0 /* DogLover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogLover.swift; sourceTree = "<group>"; };
+		D467C919205B1FF800817CD0 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		D467C91B205B200700817CD0 /* DogSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSearchResult.swift; sourceTree = "<group>"; };
+		D467C91D205B201500817CD0 /* ModelSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearchRequest.swift; sourceTree = "<group>"; };
+		D4806D48205B0A6100EB9742 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D4806D4E205B0F6100EB9742 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D4806D50205B109400EB9742 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		D4806D54205B11EF00EB9742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_Pup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6370DC06FF951C3F72C1695 /* Pods-Pic-a-PupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupUITests/Pods-Pic-a-PupUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EF81CFAB903F6FE0F8BD04CF /* Pods-Pic-a-PupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupTests/Pods-Pic-a-PupTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,11 +165,13 @@
 		D433026820583A4500AFA47F /* Pic-a-Pup */ = {
 			isa = PBXGroup;
 			children = (
+				D4806D4D205B0EE600EB9742 /* Utilities */,
+				D4806D4C205B0ED200EB9742 /* Controllers */,
+				D4806D4B205B0EC100EB9742 /* Model */,
 				D466111E205993FD004657EB /* GoogleService-Info.plist */,
 				D433026920583A4500AFA47F /* AppDelegate.swift */,
-				D433026B20583A4500AFA47F /* ViewController.swift */,
-				D433026D20583A4500AFA47F /* Main.storyboard */,
 				D433027020583A4500AFA47F /* Assets.xcassets */,
+				D4806D48205B0A6100EB9742 /* Main.storyboard */,
 				D433027220583A4500AFA47F /* LaunchScreen.storyboard */,
 				D433027520583A4500AFA47F /* Info.plist */,
 			);
@@ -168,6 +194,40 @@
 				D433028B20583A4500AFA47F /* Info.plist */,
 			);
 			path = "Pic-a-PupUITests";
+			sourceTree = "<group>";
+		};
+		D4806D4B205B0EC100EB9742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4806D4E205B0F6100EB9742 /* User.swift */,
+				D467C913205B1F9D00817CD0 /* Admin.swift */,
+				D467C915205B1FB300817CD0 /* Lovable.swift */,
+				D467C917205B1FE300817CD0 /* DogLover.swift */,
+				D467C919205B1FF800817CD0 /* Dog.swift */,
+				D467C91B205B200700817CD0 /* DogSearchResult.swift */,
+				D467C91D205B201500817CD0 /* ModelSearchRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4806D4C205B0ED200EB9742 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D433026B20583A4500AFA47F /* MenuViewController.swift */,
+				D4806D54205B11EF00EB9742 /* LoginViewController.swift */,
+				D467C911205B1D3600817CD0 /* SignUpViewController.swift */,
+				D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4806D4D205B0EE600EB9742 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D4806D50205B109400EB9742 /* Utility.swift */,
+				D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D433027420583A4500AFA47F /* LaunchScreen.storyboard in Resources */,
+				D4806D49205B0A6100EB9742 /* Main.storyboard in Resources */,
 				D466111F205993FE004657EB /* GoogleService-Info.plist in Resources */,
 				D433027120583A4500AFA47F /* Assets.xcassets in Resources */,
-				D433026F20583A4500AFA47F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +550,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D433026C20583A4500AFA47F /* ViewController.swift in Sources */,
+				D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */,
+				D467C912205B1D3600817CD0 /* SignUpViewController.swift in Sources */,
+				D4806D51205B109400EB9742 /* Utility.swift in Sources */,
+				D467C918205B1FE300817CD0 /* DogLover.swift in Sources */,
+				D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */,
+				D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */,
+				D467C91E205B201500817CD0 /* ModelSearchRequest.swift in Sources */,
+				D467C91A205B1FF800817CD0 /* Dog.swift in Sources */,
+				D467C916205B1FB300817CD0 /* Lovable.swift in Sources */,
+				D433026C20583A4500AFA47F /* MenuViewController.swift in Sources */,
 				D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */,
+				D4806D4F205B0F6100EB9742 /* User.swift in Sources */,
+				D467C914205B1F9D00817CD0 /* Admin.swift in Sources */,
+				D467C91C205B200700817CD0 /* DogSearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,14 +599,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D433026D20583A4500AFA47F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D433026E20583A4500AFA47F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D433027220583A4500AFA47F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
