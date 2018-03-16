@@ -23,33 +23,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        
-        continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        continueButton.setTitleColor(secondaryColor, for: .normal)
-        continueButton.setTitle("Continue", for: .normal)
-        continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
-        continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        continueButton.defaultColor = UIColor.white
-        continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-        view.addSubview(continueButton)
-        setContinueButton(enabled: false)
-        
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityView.color = secondaryColor
-        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = continueButton.center
-        view.addSubview(activityView)
-        
-        usernameField.delegate = self
-        emailField.delegate = self
-        passwordField.delegate = self
-        
-        usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        configureViews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +38,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         usernameField.resignFirstResponder()
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
-        
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -82,7 +55,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
      Adjusts the center of the **continueButton** above the keyboard.
      - Parameter notification: Contains the keyboardFrame info.
      */
-    
     @objc func keyboardWillAppear(notification: NSNotification){
         
         let info = notification.userInfo!
@@ -95,10 +67,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     /**
      Enables the continue button if the **username**, **email**, and **password** fields are all non-empty.
-     
      - Parameter target: The targeted **UITextField**.
      */
-    
     @objc func textFieldChanged(_ target:UITextField) {
         let username = usernameField.text
         let email = emailField.text
@@ -107,26 +77,22 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         setContinueButton(enabled: formFilled)
     }
     
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         // Resigns the target textField and assigns the next textField in the form.
-        
         switch textField {
-        case usernameField:
-            usernameField.resignFirstResponder()
-            emailField.becomeFirstResponder()
-            break
-        case emailField:
-            emailField.resignFirstResponder()
-            passwordField.becomeFirstResponder()
-            break
-        case passwordField:
-            handleSignUp()
-            break
-        default:
-            break
+            case usernameField:
+                usernameField.resignFirstResponder()
+                emailField.becomeFirstResponder()
+                break
+            case emailField:
+                emailField.resignFirstResponder()
+                passwordField.becomeFirstResponder()
+                break
+            case passwordField:
+                handleSignUp()
+                break
+            default:
+                break
         }
         return true
     }
@@ -134,7 +100,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     /**
      Enables or Disables the **continueButton**.
      */
-    
     func setContinueButton(enabled:Bool) {
         if enabled {
             continueButton.alpha = 1.0
@@ -163,12 +128,39 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                 }
             } else {
                 print("Error: \(error!.localizedDescription)")
-    
             }
         }
-        
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
+    }
+    
+    func configureViews() {
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+        continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        continueButton.setTitleColor(secondaryColor, for: .normal)
+        continueButton.setTitle("Continue", for: .normal)
+        continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
+        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
+        continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
+        continueButton.defaultColor = UIColor.white
+        continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+        view.addSubview(continueButton)
+        setContinueButton(enabled: false)
+        
+        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        activityView.color = secondaryColor
+        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
+        activityView.center = continueButton.center
+        view.addSubview(activityView)
+        
+        usernameField.delegate = self
+        emailField.delegate = self
+        passwordField.delegate = self
+        
+        usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
 }
