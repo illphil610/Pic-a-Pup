@@ -16,6 +16,8 @@
 		D433027420583A4500AFA47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D433027220583A4500AFA47F /* LaunchScreen.storyboard */; };
 		D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */; };
 		D433028A20583A4500AFA47F /* Pic_a_PupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */; };
+		D438F390205B8DC0000EB2C4 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */; };
+		D45CAF7F205C82C50093C82B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CAF7E205C82C50093C82B /* CameraViewController.swift */; };
 		D466111F205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
 		D4661120205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
 		D4661121205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
@@ -70,6 +72,8 @@
 		D433028520583A4500AFA47F /* Pic-a-PupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pic-a-PupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic_a_PupUITests.swift; sourceTree = "<group>"; };
 		D433028B20583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		D45CAF7E205C82C50093C82B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D466111E205993FD004657EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D467C911205B1D3600817CD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D467C913205B1F9D00817CD0 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				D4806D54205B11EF00EB9742 /* LoginViewController.swift */,
 				D467C911205B1D3600817CD0 /* SignUpViewController.swift */,
 				D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */,
+				D45CAF7E205C82C50093C82B /* CameraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			children = (
 				D4806D50205B109400EB9742 /* Utility.swift */,
 				D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */,
+				D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pic-a-Pup/Pods-Pic-a-Pup-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -397,6 +404,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -562,6 +570,8 @@
 				D433026C20583A4500AFA47F /* MenuViewController.swift in Sources */,
 				D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */,
 				D4806D4F205B0F6100EB9742 /* User.swift in Sources */,
+				D438F390205B8DC0000EB2C4 /* FirebaseManager.swift in Sources */,
+				D45CAF7F205C82C50093C82B /* CameraViewController.swift in Sources */,
 				D467C914205B1F9D00817CD0 /* Admin.swift in Sources */,
 				D467C91C205B200700817CD0 /* DogSearchResult.swift in Sources */,
 			);

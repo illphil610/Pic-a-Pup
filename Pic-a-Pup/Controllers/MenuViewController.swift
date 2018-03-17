@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import Firebase
 
 class MenuViewController: UIViewController {
@@ -26,8 +27,8 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let currentUser = Auth.auth().currentUser {
-            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "toMainScreen", sender: self)
         }
     
     }
@@ -36,6 +37,10 @@ class MenuViewController: UIViewController {
         get {
             return .lightContent
         }
+    }
+    
+    override open var shouldAutorotate: Bool {
+        return false
     }
     
     override func didReceiveMemoryWarning() {

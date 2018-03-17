@@ -17,7 +17,8 @@ pod 'Alamofire', '~> 4.7'
 pod 'AlamofireImage'
 pod 'SwiftLocation'
 pod 'SnapKit', '~> 4.0.0'
-pod 'SwiftyCam', :git => 'https://github.com/Awalz/SwiftyCam.git', :branch => 'Swift4' 
+pod 'SwiftyCam', :git => 'https://github.com/Awalz/SwiftyCam.git', :branch => 'Swift4'
+pod 'CameraManager', '~> 4.0'
 
 
   # Pods for Pic-a-Pup

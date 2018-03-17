@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
@@ -29,6 +30,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailField.becomeFirstResponder()
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
+    }
+    
+    override open var shouldAutorotate: Bool {
+        return false
     }
     
     override func viewWillDisappear(_ animated: Bool) {

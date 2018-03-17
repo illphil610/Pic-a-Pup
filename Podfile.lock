@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.0)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - CameraManager (4.0.1)
   - Firebase/Auth (4.10.1):
     - Firebase/Core
     - FirebaseAuth (= 4.4.4)
@@ -76,6 +77,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
+  - CameraManager (~> 4.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -101,6 +103,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  CameraManager: 56b3516e8e22cfbf56f3f0401291561e1ad9b3d0
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: d040bb7a9db6dfc29d0e7ec82d48be51352b2581
@@ -121,6 +124,6 @@ SPEC CHECKSUMS:
   SwiftyCam: 7c826b73a5b208677aee29390582c771bf748661
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: f6dacdc09eddb45971ece2d822d89a09248ddccb
+PODFILE CHECKSUM: a427b893c1e45b2b46784221fbadccd337a3ed8f
 
 COCOAPODS: 1.4.0

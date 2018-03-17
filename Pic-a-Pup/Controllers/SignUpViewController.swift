@@ -163,4 +163,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
+    
+    override open var shouldAutorotate: Bool {
+        return false
+    }
 }
