@@ -33,6 +33,7 @@
 		D4806D51205B109400EB9742 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D50205B109400EB9742 /* Utility.swift */; };
 		D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */; };
 		D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D54205B11EF00EB9742 /* LoginViewController.swift */; };
+		D48DCE93205F377E006B9B2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DCE92205F377E006B9B2F /* NetworkManager.swift */; };
 		D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		D4806D50205B109400EB9742 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		D4806D54205B11EF00EB9742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D48DCE92205F377E006B9B2F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_Pup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6370DC06FF951C3F72C1695 /* Pods-Pic-a-PupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupUITests/Pods-Pic-a-PupUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				D4806D50205B109400EB9742 /* Utility.swift */,
 				D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */,
 				D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */,
+				D48DCE92205F377E006B9B2F /* NetworkManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				D467C91A205B1FF800817CD0 /* Dog.swift in Sources */,
 				D467C916205B1FB300817CD0 /* Lovable.swift in Sources */,
 				D433026C20583A4500AFA47F /* MenuViewController.swift in Sources */,
+				D48DCE93205F377E006B9B2F /* NetworkManager.swift in Sources */,
 				D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */,
 				D4806D4F205B0F6100EB9742 /* User.swift in Sources */,
 				D438F390205B8DC0000EB2C4 /* FirebaseManager.swift in Sources */,

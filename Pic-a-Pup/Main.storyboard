@@ -418,32 +418,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Logged in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvE-Jz-Wuh">
-                                <rect key="frame" x="132" y="323" width="111" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvE-Jz-Wuh">
+                                <rect key="frame" x="132" y="396" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-WK-hwz">
+                                <rect key="frame" x="304" y="44" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="handleLogOut:" destination="vnq-hK-RH0" eventType="touchUpInside" id="nMG-9q-AGK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="top" secondItem="sFM-pe-jJN" secondAttribute="bottom" constant="352" id="131-HT-hpl"/>
                             <constraint firstItem="hvE-Jz-Wuh" firstAttribute="centerY" secondItem="B5y-uX-wWw" secondAttribute="centerY" id="8cI-jH-wwQ"/>
                             <constraint firstItem="hvE-Jz-Wuh" firstAttribute="centerX" secondItem="B5y-uX-wWw" secondAttribute="centerX" id="MET-lK-U0L"/>
+                            <constraint firstItem="LLN-Pp-W04" firstAttribute="trailing" secondItem="hvE-Jz-Wuh" secondAttribute="trailing" constant="132" id="MvQ-li-jWJ"/>
+                            <constraint firstItem="4Oh-CU-K6n" firstAttribute="top" secondItem="hvE-Jz-Wuh" secondAttribute="bottom" constant="312" id="R9x-nb-a1H"/>
+                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="leading" secondItem="LLN-Pp-W04" secondAttribute="leading" constant="132" id="Rva-ea-NjB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LLN-Pp-W04"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="gSx-kL-En9"/>
-                    <navigationItem key="navigationItem" id="jXQ-TI-Hlu">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="brk-kB-w61">
-                            <connections>
-                                <action selector="handleLogout:" destination="vnq-hK-RH0" id="xeP-fL-ffq"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nE-Wg-ciN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="-628"/>
+            <point key="canvasLocation" x="5361" y="-882"/>
         </scene>
         <!--Profile-->
         <scene sceneID="nsj-Zq-UZU">
@@ -484,23 +489,33 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M9l-pq-bns">
+                                <rect key="frame" x="0.0" y="44" width="375" height="641"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="trailing" secondItem="ndP-f7-20h" secondAttribute="trailing" id="21U-IV-AV1"/>
+                            <constraint firstItem="M9l-pq-bns" firstAttribute="centerY" secondItem="01J-H9-cZh" secondAttribute="centerY" constant="-41.5" id="3ed-FV-2ZG"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="bottom" secondItem="ndP-f7-20h" secondAttribute="bottom" id="4LM-fq-j2Z"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="trailing" secondItem="ndP-f7-20h" secondAttribute="trailing" id="7Gk-PM-bzq"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="leading" secondItem="ndP-f7-20h" secondAttribute="leading" id="NOH-Ss-dar"/>
+                            <constraint firstItem="M9l-pq-bns" firstAttribute="top" secondItem="ndP-f7-20h" secondAttribute="top" id="Oew-TT-fj5"/>
+                            <constraint firstItem="M9l-pq-bns" firstAttribute="leading" secondItem="ndP-f7-20h" secondAttribute="leading" id="Rb7-Wf-LTn"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="leading" secondItem="ndP-f7-20h" secondAttribute="leading" id="cTK-cQ-ZyE"/>
+                            <constraint firstItem="M9l-pq-bns" firstAttribute="centerX" secondItem="01J-H9-cZh" secondAttribute="centerX" id="joU-EX-NTc"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="bottom" secondItem="ndP-f7-20h" secondAttribute="bottom" id="ktn-Vc-eTx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ndP-f7-20h"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" id="xdy-2P-j72"/>
+                    <connections>
+                        <outlet property="pictureFromCamera" destination="M9l-pq-bns" id="SS9-E2-fqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKa-Yd-HF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="1219"/>
+            <point key="canvasLocation" x="5360.8000000000002" y="1218.4729064039409"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nTL-Qf-JKX">
