@@ -10,7 +10,7 @@ import Foundation
 import FirebaseStorage
 import Firebase
 
-struct Contants {
+struct Constants {
     struct Pups {
         static let imagesFolder: String = "PupImages"
     }
@@ -22,13 +22,13 @@ class FirebaseManager {
         let storageReference = storage.reference()
         
         let imageName = "\(Date().timeIntervalSince1970).jpg"
-        let imagesReference = storageReference.child(Contants.Pups.imagesFolder).child(imageName)
+        let imagesReference = storageReference.child(Constants.Pups.imagesFolder).child(imageName)
         
         if let imageData = UIImageJPEGRepresentation(image, 0.1) {
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
             
-            let uploadTask = imagesReference.putData(imageData, metadata: metadata, completion: { metadata, error in
+            let _ = imagesReference.putData(imageData, metadata: metadata, completion: { metadata, error in
                 if let metadata = metadata {
                     completionBlock(metadata.downloadURL(), nil)
                 } else {

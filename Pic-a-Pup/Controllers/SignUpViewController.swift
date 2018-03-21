@@ -18,8 +18,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
     
-    var continueButton:RoundedWhiteButton!
-    var activityView:UIActivityIndicatorView!
+    var continueButton: RoundedWhiteButton!
+    var activityView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         usernameField.becomeFirstResponder()
-        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        
+        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear),
+                                               name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -61,7 +61,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         continueButton.center = CGPoint(x: view.center.x,
-                                        y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
+                                        y: view.frame.height - keyboardFrame.height - 16.0
+                                            - continueButton.frame.height / 2)
         activityView.center = continueButton.center
     }
     
@@ -97,19 +98,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         return true
     }
     
-    /**
-     Enables or Disables the **continueButton**.
-     */
-    func setContinueButton(enabled:Bool) {
-        if enabled {
-            continueButton.alpha = 1.0
-            continueButton.isEnabled = true
-        } else {
-            continueButton.alpha = 0.5
-            continueButton.isEnabled = false
-        }
-    }
-    
     @objc func handleSignUp() {
         guard let username = usernameField.text else { return }
         guard let email = emailField.text else { return }
@@ -133,6 +121,19 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
+    }
+    
+    /**
+     Enables or Disables the **continueButton**.
+     */
+    func setContinueButton(enabled:Bool) {
+        if enabled {
+            continueButton.alpha = 1.0
+            continueButton.isEnabled = true
+        } else {
+            continueButton.alpha = 0.5
+            continueButton.isEnabled = false
+        }
     }
     
     func configureViews() {

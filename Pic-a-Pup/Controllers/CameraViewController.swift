@@ -17,14 +17,17 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
     
     @IBOutlet weak var pictureFromCamera: UIImageView!
     
-    
     let picker = UIImagePickerController()
     let fbManager = FirebaseManager()
     let networkManager = NetworkManager()
+    let cameraManager = CameraManager()
+    let utility = Utility()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
     }
     
     @IBAction func launchPhotoGallery(_ sender: UIBarButtonItem) {
@@ -34,6 +37,9 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
         picker.modalPresentationStyle = .popover
         present(picker, animated: true, completion: nil)
         picker.popoverPresentationController?.barButtonItem = sender
+        //cameraManager.launchPhotoLibrary(picker: picker)
+        //present(picker, animated: true, completion: nil)
+        //picker.popoverPresentationController?.barButtonItem = sender
     }
     
     @IBAction func launchCamera(_ sender: UIBarButtonItem) {
@@ -44,46 +50,31 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
             picker.modalPresentationStyle = .fullScreen
             present(picker,animated: true,completion: nil)
         } else {
-            noCamera()
+            let alertVC = cameraManager.noCameraAvailable()
+            present(alertVC, animated: true, completion: nil)
         }
     }
     
-    func noCamera() {
-        let alertVC = UIAlertController(title: "No Camera",
-                                        message: "Sorry, this device has no camera",
-                                        preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK",
-                                     style:.default,
-                                     handler: nil)
-        alertVC.addAction(okAction)
-        present(alertVC, animated: true, completion: nil)
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get { return .lightContent }
     }
     
-    
     //MARK: - Delegates
-    @objc func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : Any]) {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let chosenImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             pictureFromCamera.contentMode = .scaleAspectFill
             pictureFromCamera.clipsToBounds = true
             pictureFromCamera.image = chosenImage
+            
             fbManager.uploadImageToFirebase(chosenImage, completionBlock: { (fileUrl, errorMessage) in
-                if let error = errorMessage {
-                    print("\(error)")
-                }
                 if let url = fileUrl {
-                    print(url)
-                    let urlString = "http://httpbin.org/post"
-                    Alamofire.request(urlString, method: .post, parameters: ["foo": "bar"],encoding: JSONEncoding.default, headers: nil).responseJSON {
-                        response in
-                        switch response.result {
-                        case .success:
-                            print(response)
-                            break
-                        case .failure(let error):
-                            print(error)
-                        }
+                    let modelSearchRequest = ModelSearchRequest(breed: "Beagle", location: "19426", url: "\(url)")
+                    let dick = try? modelSearchRequest.asDictionary()
+                    if let dicktionary = dick {
+                        self.networkManager.sendPostToServer(parameters: dicktionary)
                     }
+                } else if let error = errorMessage {
+                    print("\(error)")
                 }
             })
         }

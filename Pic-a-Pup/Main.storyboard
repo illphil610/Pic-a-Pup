@@ -490,13 +490,13 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M9l-pq-bns">
-                                <rect key="frame" x="0.0" y="44" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="336"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="trailing" secondItem="ndP-f7-20h" secondAttribute="trailing" id="21U-IV-AV1"/>
-                            <constraint firstItem="M9l-pq-bns" firstAttribute="centerY" secondItem="01J-H9-cZh" secondAttribute="centerY" constant="-41.5" id="3ed-FV-2ZG"/>
+                            <constraint firstItem="M9l-pq-bns" firstAttribute="centerY" secondItem="01J-H9-cZh" secondAttribute="centerY" constant="-194" id="3ed-FV-2ZG"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="bottom" secondItem="ndP-f7-20h" secondAttribute="bottom" id="4LM-fq-j2Z"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="trailing" secondItem="ndP-f7-20h" secondAttribute="trailing" id="7Gk-PM-bzq"/>
                             <constraint firstItem="AEp-q2-UHC" firstAttribute="leading" secondItem="ndP-f7-20h" secondAttribute="leading" id="NOH-Ss-dar"/>

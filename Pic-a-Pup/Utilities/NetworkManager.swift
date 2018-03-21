@@ -12,9 +12,10 @@ import Alamofire
 class NetworkManager {
     
     let url = "http://httpbin.org/post"
+    let picapupAPIUrl = "18.219.234.168:5000/breedSearch"
     
-    func sendPostToServer() {
-        Alamofire.request(url, method: .post, parameters: ["foo": "bar"], encoding: JSONEncoding.default, headers: nil).responseJSON {
+    func sendPostToServer(parameters: Dictionary<String, Any>) {
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in
             switch response.result {
             case .success:

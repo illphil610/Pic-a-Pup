@@ -34,6 +34,7 @@
 		D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */; };
 		D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D54205B11EF00EB9742 /* LoginViewController.swift */; };
 		D48DCE93205F377E006B9B2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DCE92205F377E006B9B2F /* NetworkManager.swift */; };
+		D48F21E420622340000CA95C /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48F21E320622340000CA95C /* CameraManager.swift */; };
 		D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		D4806D54205B11EF00EB9742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D48DCE92205F377E006B9B2F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D48F21E320622340000CA95C /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_Pup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6370DC06FF951C3F72C1695 /* Pods-Pic-a-PupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupUITests/Pods-Pic-a-PupUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				D4806D52205B114200EB9742 /* RoundedWhiteButton.swift */,
 				D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */,
 				D48DCE92205F377E006B9B2F /* NetworkManager.swift */,
+				D48F21E320622340000CA95C /* CameraManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				D438F390205B8DC0000EB2C4 /* FirebaseManager.swift in Sources */,
 				D45CAF7F205C82C50093C82B /* CameraViewController.swift in Sources */,
 				D467C914205B1F9D00817CD0 /* Admin.swift in Sources */,
+				D48F21E420622340000CA95C /* CameraManager.swift in Sources */,
 				D467C91C205B200700817CD0 /* DogSearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
