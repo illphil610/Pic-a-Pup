@@ -11,11 +11,19 @@ import UIKit
 import CameraManager
 import Firebase
 import Alamofire
+import CoreLocation
+import SwiftyJSON
 
 class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
-                                               UINavigationControllerDelegate {
-    
+    UINavigationControllerDelegate ,
+    NetworkProtocolDelegate,
+UtilityDelegate {
+    //CLLocationManagerDelegate,
     @IBOutlet weak var pictureFromCamera: UIImageView!
+    @IBOutlet weak var breedTypeLabel: UILabel!
+    @IBOutlet weak var breedInfoTextField: UITextView!
+    
+    let locationManager = CLLocationManager()
     
     let picker = UIImagePickerController()
     let fbManager = FirebaseManager()
@@ -26,8 +34,17 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
-        
+        utility.delegate = self
+        networkManager.delegate = self
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        locationManager.delegate = utility
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     @IBAction func launchPhotoGallery(_ sender: UIBarButtonItem) {
@@ -65,13 +82,16 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
             pictureFromCamera.contentMode = .scaleAspectFill
             pictureFromCamera.clipsToBounds = true
             pictureFromCamera.image = chosenImage
+            breedTypeLabel.text = "Weiner Dog"
+            breedInfoTextField.text = "best dog around"
             
+            // This needs to be implemented when the user clicks a button
             fbManager.uploadImageToFirebase(chosenImage, completionBlock: { (fileUrl, errorMessage) in
                 if let url = fileUrl {
                     let modelSearchRequest = ModelSearchRequest(breed: "Beagle", location: "19426", url: "\(url)")
                     let dick = try? modelSearchRequest.asDictionary()
                     if let dicktionary = dick {
-                        self.networkManager.sendPostToServer(parameters: dicktionary)
+                        //self.networkManager.sendPostToServer(parameters: dicktionary)
                     }
                 } else if let error = errorMessage {
                     print("\(error)")
@@ -80,9 +100,28 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
         }
         dismiss(animated:true, completion: nil)
     }
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
+        
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        func sendPlacemarkData(_ placemark: CLPlacemark) {
+            print(placemark.postalCode ?? "default jawn")
+        }
+        
+        func sendLocationCoorData(_ locationCoords: CLLocation) {
+            print(locationCoords.coordinate)
+        }
+        
+        func sendResponseJSONData(_ response: Any) {
+            let json = JSON(response)
+            print("\(json)")
+            //breedTypeLabel.text = json["name"].string
+            //breedInfoTextField.text = json["info"].string
+            
+            breedTypeLabel.text = "Weiner Dog"
+            breedInfoTextField.text = "best dog around"
+        }
 }
 
 
