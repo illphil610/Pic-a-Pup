@@ -19,8 +19,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func handleLogOut(_ sender: UIButton) {
-            try! Auth.auth().signOut()
-            self.dismiss(animated: false, completion: nil)
+        try! Auth.auth().signOut()
+        self.dismiss(animated: false, completion: nil)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

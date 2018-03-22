@@ -16,7 +16,7 @@ struct Constants {
     }
 }
 
-class FirebaseManager {
+class FirebaseManager: NSObject {
     func uploadImageToFirebase(_ image: UIImage, completionBlock: @escaping (_ url: URL?, _ errorMessage: String?) -> Void) {
         let storage = Storage.storage()
         let storageReference = storage.reference()

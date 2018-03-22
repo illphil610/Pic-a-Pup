@@ -75,15 +75,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Resigns the target textField and assigns the next textField in the form.
         switch textField {
-            case emailField:
-                emailField.resignFirstResponder()
-                passwordField.becomeFirstResponder()
-                break
-            case passwordField:
-                handleSignIn()
-                break
-            default:
-                break
+        case emailField:
+            emailField.resignFirstResponder()
+            passwordField.becomeFirstResponder()
+            break
+        case passwordField:
+            handleSignIn()
+            break
+        default:
+            break
         }
         return true
     }

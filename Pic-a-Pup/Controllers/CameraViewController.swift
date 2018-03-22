@@ -14,10 +14,8 @@ import Alamofire
 import CoreLocation
 import SwiftyJSON
 
-class CameraViewController : UIViewController, UIImagePickerControllerDelegate,
-    UINavigationControllerDelegate ,
-    NetworkProtocolDelegate,
-UtilityDelegate {
+class CameraViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,
+                                               NetworkProtocolDelegate, UtilityDelegate {
     //CLLocationManagerDelegate,
     @IBOutlet weak var pictureFromCamera: UIImageView!
     @IBOutlet weak var breedTypeLabel: UILabel!
@@ -91,7 +89,7 @@ UtilityDelegate {
                     let modelSearchRequest = ModelSearchRequest(breed: "Beagle", location: "19426", url: "\(url)")
                     let dick = try? modelSearchRequest.asDictionary()
                     if let dicktionary = dick {
-                        //self.networkManager.sendPostToServer(parameters: dicktionary)
+                        self.networkManager.sendPostToServer(parameters: dicktionary)
                     }
                 } else if let error = errorMessage {
                     print("\(error)")
@@ -100,28 +98,27 @@ UtilityDelegate {
         }
         dismiss(animated:true, completion: nil)
     }
-        
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            dismiss(animated: true, completion: nil)
-        }
-        
-        func sendPlacemarkData(_ placemark: CLPlacemark) {
-            print(placemark.postalCode ?? "default jawn")
-        }
-        
-        func sendLocationCoorData(_ locationCoords: CLLocation) {
-            print(locationCoords.coordinate)
-        }
-        
-        func sendResponseJSONData(_ response: Any) {
-            let json = JSON(response)
-            print("\(json)")
-            //breedTypeLabel.text = json["name"].string
-            //breedInfoTextField.text = json["info"].string
-            
-            breedTypeLabel.text = "Weiner Dog"
-            breedInfoTextField.text = "best dog around"
-        }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func sendPlacemarkData(_ placemark: CLPlacemark) {
+        print(placemark.postalCode ?? "default jawn")
+    }
+    
+    func sendLocationCoorData(_ locationCoords: CLLocation) {
+        print(locationCoords.coordinate)
+    }
+    
+    func sendResponseJSONData(_ response: Any) {
+        let json = JSON(response)
+        print("\(json)")
+        //breedTypeLabel.text = json["name"].string
+        //breedInfoTextField.text = json["info"].string
+        breedTypeLabel.text = "Weiner Dog"
+        breedInfoTextField.text = "best dog around"
+    }
 }
 
 

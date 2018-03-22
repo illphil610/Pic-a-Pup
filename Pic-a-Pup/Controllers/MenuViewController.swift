@@ -26,7 +26,6 @@ class MenuViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "toMainScreen", sender: self)
         }
@@ -34,9 +33,7 @@ class MenuViewController: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        get {
-            return .lightContent
-        }
+        get { return .lightContent }
     }
     
     override open var shouldAutorotate: Bool {

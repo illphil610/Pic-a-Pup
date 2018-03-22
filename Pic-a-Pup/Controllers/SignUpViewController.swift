@@ -11,7 +11,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class SignUpViewController:UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -81,19 +81,19 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Resigns the target textField and assigns the next textField in the form.
         switch textField {
-            case usernameField:
-                usernameField.resignFirstResponder()
-                emailField.becomeFirstResponder()
-                break
-            case emailField:
-                emailField.resignFirstResponder()
-                passwordField.becomeFirstResponder()
-                break
-            case passwordField:
-                handleSignUp()
-                break
-            default:
-                break
+        case usernameField:
+            usernameField.resignFirstResponder()
+            emailField.becomeFirstResponder()
+            break
+        case emailField:
+            emailField.resignFirstResponder()
+            passwordField.becomeFirstResponder()
+            break
+        case passwordField:
+            handleSignUp()
+            break
+        default:
+            break
         }
         return true
     }
