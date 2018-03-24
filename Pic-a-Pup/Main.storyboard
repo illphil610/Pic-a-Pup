@@ -418,12 +418,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvE-Jz-Wuh">
-                                <rect key="frame" x="132" y="396" width="111" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-WK-hwz">
                                 <rect key="frame" x="304" y="44" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -434,14 +428,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="top" secondItem="sFM-pe-jJN" secondAttribute="bottom" constant="352" id="131-HT-hpl"/>
-                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="centerY" secondItem="B5y-uX-wWw" secondAttribute="centerY" id="8cI-jH-wwQ"/>
-                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="centerX" secondItem="B5y-uX-wWw" secondAttribute="centerX" id="MET-lK-U0L"/>
-                            <constraint firstItem="LLN-Pp-W04" firstAttribute="trailing" secondItem="hvE-Jz-Wuh" secondAttribute="trailing" constant="132" id="MvQ-li-jWJ"/>
-                            <constraint firstItem="4Oh-CU-K6n" firstAttribute="top" secondItem="hvE-Jz-Wuh" secondAttribute="bottom" constant="312" id="R9x-nb-a1H"/>
-                            <constraint firstItem="hvE-Jz-Wuh" firstAttribute="leading" secondItem="LLN-Pp-W04" secondAttribute="leading" constant="132" id="Rva-ea-NjB"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LLN-Pp-W04"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="gSx-kL-En9"/>
@@ -453,7 +439,7 @@
         <!--Profile-->
         <scene sceneID="nsj-Zq-UZU">
             <objects>
-                <viewController id="qBQ-dH-AGt" userLabel="Profile" sceneMemberID="viewController">
+                <viewController id="qBQ-dH-AGt" userLabel="Profile" customClass="ProfileViewController" customModule="Pic_a_Pup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4mf-h9-snS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

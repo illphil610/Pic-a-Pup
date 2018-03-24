@@ -15,19 +15,19 @@ class NetworkManager: NSObject {
     
     // Temp API endpoints....i know they shouldnt be here
     let testUrl = "http://httpbin.org/post"
-    //let picapupAPIUrl = "http://18.219.234.168:5000/breedSearch"
+    let backendEndpoint = "18.219.234.144"
     
     func sendPostToServer(parameters: Dictionary<String, Any>) {
-        Alamofire.request("http://18.219.234.168:5000/breedSearch", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
-            
-            switch response.result {
-            case .success:
-                if let result = response.result.value {
-                    self.delegate?.sendResponseJSONData(result)
-                }
-                break
-            case .failure(let error):
-                print(error)
+        Alamofire.request("http://18.219.234.144", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON{ response in
+                switch response.result {
+                case .success:
+                    if let result = response.result.value {
+                        self.delegate?.sendResponseJSONData(result)
+                    }
+                    break
+                case .failure(let error):
+                    print(error)
             }
         }
     }

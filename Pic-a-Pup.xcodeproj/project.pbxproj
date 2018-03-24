@@ -17,6 +17,7 @@
 		D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */; };
 		D433028A20583A4500AFA47F /* Pic_a_PupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */; };
 		D438F390205B8DC0000EB2C4 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */; };
+		D44C6D7D2065D3A500418B18 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6D7C2065D3A500418B18 /* ProfileViewController.swift */; };
 		D45CAF7F205C82C50093C82B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CAF7E205C82C50093C82B /* CameraViewController.swift */; };
 		D466111F205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
 		D4661120205993FE004657EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D466111E205993FD004657EB /* GoogleService-Info.plist */; };
@@ -76,6 +77,7 @@
 		D433028920583A4500AFA47F /* Pic_a_PupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic_a_PupUITests.swift; sourceTree = "<group>"; };
 		D433028B20583A4500AFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D438F38F205B8DC0000EB2C4 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		D44C6D7C2065D3A500418B18 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D45CAF7E205C82C50093C82B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D466111E205993FD004657EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D467C911205B1D3600817CD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				D467C911205B1D3600817CD0 /* SignUpViewController.swift */,
 				D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */,
 				D45CAF7E205C82C50093C82B /* CameraViewController.swift */,
+				D44C6D7C2065D3A500418B18 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 			files = (
 				D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */,
 				D467C912205B1D3600817CD0 /* SignUpViewController.swift in Sources */,
+				D44C6D7D2065D3A500418B18 /* ProfileViewController.swift in Sources */,
 				D4806D51205B109400EB9742 /* Utility.swift in Sources */,
 				D467C918205B1FE300817CD0 /* DogLover.swift in Sources */,
 				D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */,

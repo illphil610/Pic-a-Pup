@@ -40,6 +40,10 @@ class Utility: NSObject, CLLocationManagerDelegate  {
     func sendPlacemark() -> CLPlacemark {
         return placemark!
     }
+    
+    func createModelSearchRequest(_ breedName: String, _ userLocation: String, _ downloadUrl: String) -> ModelSearchRequest {
+        return ModelSearchRequest(breed: breedName, location: userLocation, url: downloadUrl)
+    }
 }
 
 protocol UtilityDelegate: class {

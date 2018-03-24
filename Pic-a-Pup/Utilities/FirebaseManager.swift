@@ -20,15 +20,13 @@ class FirebaseManager: NSObject {
     func uploadImageToFirebase(_ image: UIImage, completionBlock: @escaping (_ url: URL?, _ errorMessage: String?) -> Void) {
         let storage = Storage.storage()
         let storageReference = storage.reference()
-        
         let imageName = "\(Date().timeIntervalSince1970).jpg"
         let imagesReference = storageReference.child(Constants.Pups.imagesFolder).child(imageName)
         
         if let imageData = UIImageJPEGRepresentation(image, 0.1) {
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
-            
-            let _ = imagesReference.putData(imageData, metadata: metadata, completion: { metadata, error in
+            let _ = imagesReference.putData(imageData, metadata: metadata, completion: { (metadata, error) in
                 if let metadata = metadata {
                     completionBlock(metadata.downloadURL(), nil)
                 } else {
