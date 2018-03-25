@@ -20,6 +20,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var continueButton: RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
     
+    let utility = Utility()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
@@ -103,15 +105,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
         
-        setContinueButton(enabled: false)
-        continueButton.setTitle("", for: .normal)
-        activityView.startAnimating()
-        
-        Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            if error == nil && user != nil {
-                self.dismiss(animated: false, completion: nil)
-            } else {
-                print("Error logging in \(String(describing: error?.localizedDescription))")
+        if (utility.isValidEmail(email)) {
+            setContinueButton(enabled: false)
+            continueButton.setTitle("", for: .normal)
+            activityView.startAnimating()
+            
+            Auth.auth().signIn(withEmail: email, password: password) { user, error in
+                if error == nil && user != nil {
+                    self.dismiss(animated: false, completion: nil)
+                } else {
+                    print("Error logging in \(String(describing: error?.localizedDescription))")
+                }
             }
         }
     }

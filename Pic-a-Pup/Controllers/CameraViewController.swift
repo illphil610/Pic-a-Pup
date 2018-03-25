@@ -20,6 +20,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var breedTypeLabel: UILabel!
     @IBOutlet weak var breedInfoTextField: UITextView!
     
+    // Looking into dependency injection for this...
     let locationManager = CLLocationManager()
     let picker = UIImagePickerController()
     let fbManager = FirebaseManager()
@@ -27,12 +28,19 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     let cameraManager = CameraManager()
     let utility = Utility()
     
+    // Location info to be updated by utility delegate **should maybe change utility to LocationUtility haha
+    var currentUserCoordinateLocation: CLLocation?
+    var currentUserPlacemark: CLPlacemark?
+    var downloableUrlFromFirebase: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         utility.delegate = self
         networkManager.delegate = self
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer(topColor: primaryColor,
+                                      bottomColor: secondaryColor)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +64,10 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func launchCamera(_ sender: UIBarButtonItem) {
+        launchCameraForController()
+    }
+    
+    func launchCameraForController() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker.allowsEditing = false
             picker.sourceType = UIImagePickerControllerSourceType.camera
@@ -79,10 +91,12 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
             pictureFromCamera.clipsToBounds = true
             pictureFromCamera.image = chosenImage
             
-            // This needs to be implemented when the user clicks a button
+            // Send image to firebase and retrieve downloadable url
             fbManager.uploadImageToFirebase(chosenImage, completionBlock: { (fileUrl, errorMessage) in
                 if let url = fileUrl {
-                    let modelSearchRequest = ModelSearchRequest(breed: "Beagle", location: "19426", url: "\(url)")
+                    self.downloableUrlFromFirebase = url
+                    // Creating a temp ModelSearchRequest object
+                    let modelSearchRequest = ModelSearchRequest(location: "19426", url: "\(url)")
                     let dick = try? modelSearchRequest.asDictionary()
                     if let dicktionary = dick {
                         self.networkManager.sendPostToServer(parameters: dicktionary)
@@ -100,18 +114,38 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func sendPlacemarkData(_ placemark: CLPlacemark) {
+        currentUserPlacemark = placemark
         print(placemark.postalCode ?? "default jawn")
     }
     
     func sendLocationCoorData(_ locationCoords: CLLocation) {
+        currentUserCoordinateLocation = locationCoords
         print(locationCoords.coordinate)
     }
     
     func sendResponseJSONData(_ response: Any) {
         let json = JSON(response)
+        
+        // parse for data, and send avail data to firebase manager to finish creating DogSearchResult and send to Firebase.  
+        
         print("\(json)")
         breedTypeLabel.text = json["breed"].string
         breedInfoTextField.text = json["breed_info"].string
+        
+        //let breedType = json["breed"].string
+        //let breedInfo = json["breed_info"].string
+        
+        
+        //if let location = currentUserCoordinateLocation {
+          //  if let url = downloableUrlFromFirebase {
+            //    fbManager.saveObjectToFirebase(breedType!, breedInfo!, location: String(describing: location.coordinate), url)
+            //}
+    
+        /*
+        let breedType = json["breed"].string
+        let breedInfo = json["breed_info"].string
+        fbManager.saveObjectToFirebase(breedType!, breedInfo!, currentUserCoordinateLocation?.coordinate, downloableUrlFromFirebase)
+ */
     }
 }
 

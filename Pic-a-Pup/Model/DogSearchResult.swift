@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct DogSearchResult : Codable {
+    var breed: String
+    var wikiBreedInfo : String
+    var location: String
+    var url : URL
+}

@@ -25,6 +25,7 @@ pod 'CameraManager', '~> 4.0'
 
   target 'Pic-a-PupTests' do
     inherit! :search_paths
+    use_frameworks!
     # Pods for testing
   end
 

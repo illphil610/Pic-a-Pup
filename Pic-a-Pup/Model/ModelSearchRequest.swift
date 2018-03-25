@@ -9,7 +9,6 @@
 import Foundation
 
 struct ModelSearchRequest : Codable {
-    var breed : String
     var location : String
     var url : String
 }

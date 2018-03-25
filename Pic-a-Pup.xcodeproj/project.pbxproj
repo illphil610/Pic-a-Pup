@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3684871330DF71BD58AF29D7 /* Pods_Pic_a_Pup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */; };
-		6C0B9A4DF78710345741CB51 /* Pods_Pic_a_PupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C615068A318D743738BE3391 /* Pods_Pic_a_PupUITests.framework */; };
-		7281EA5871449152FC616950 /* Pods_Pic_a_PupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5A292D295DE0F40F99A6A8 /* Pods_Pic_a_PupTests.framework */; };
 		D433026A20583A4500AFA47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026920583A4500AFA47F /* AppDelegate.swift */; };
 		D433026C20583A4500AFA47F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D433026B20583A4500AFA47F /* MenuViewController.swift */; };
 		D433027120583A4500AFA47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D433027020583A4500AFA47F /* Assets.xcassets */; };
@@ -38,6 +36,8 @@
 		D48F21E420622340000CA95C /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48F21E320622340000CA95C /* CameraManager.swift */; };
 		D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */; };
 		D4EE95D220635AB300F02D94 /* UtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EE95D120635AB300F02D94 /* UtilityExtension.swift */; };
+		D4FE81D7206716E500BEFB80 /* CreateUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE81D6206716E500BEFB80 /* CreateUserTests.swift */; };
+		D4FE81D920671B3500BEFB80 /* DogLoverCreationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FE81D820671B3500BEFB80 /* DogLoverCreationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 		201501652488B60EEFF10727 /* Pods-Pic-a-Pup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-Pup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-Pup/Pods-Pic-a-Pup.debug.xcconfig"; sourceTree = "<group>"; };
 		4EB44C1F4DF133A75360C202 /* Pods-Pic-a-PupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupTests/Pods-Pic-a-PupTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B53AA2BF02673BA32065D50 /* Pods-Pic-a-PupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupUITests/Pods-Pic-a-PupUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC5A292D295DE0F40F99A6A8 /* Pods_Pic_a_PupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_PupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C615068A318D743738BE3391 /* Pods_Pic_a_PupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_PupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D433026620583A4500AFA47F /* Pic-a-Pup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pic-a-Pup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D433026920583A4500AFA47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D433026B20583A4500AFA47F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +94,8 @@
 		D48F21E320622340000CA95C /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D4EE95D120635AB300F02D94 /* UtilityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtension.swift; sourceTree = "<group>"; };
+		D4FE81D6206716E500BEFB80 /* CreateUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserTests.swift; sourceTree = "<group>"; };
+		D4FE81D820671B3500BEFB80 /* DogLoverCreationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogLoverCreationTest.swift; sourceTree = "<group>"; };
 		DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pic_a_Pup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6370DC06FF951C3F72C1695 /* Pods-Pic-a-PupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupUITests/Pods-Pic-a-PupUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EF81CFAB903F6FE0F8BD04CF /* Pods-Pic-a-PupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pic-a-PupTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pic-a-PupTests/Pods-Pic-a-PupTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7281EA5871449152FC616950 /* Pods_Pic_a_PupTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C0B9A4DF78710345741CB51 /* Pods_Pic_a_PupUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				DAD37F86A9331DA1EEB953DB /* Pods_Pic_a_Pup.framework */,
-				BC5A292D295DE0F40F99A6A8 /* Pods_Pic_a_PupTests.framework */,
-				C615068A318D743738BE3391 /* Pods_Pic_a_PupUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +192,8 @@
 			children = (
 				D433027E20583A4500AFA47F /* Pic_a_PupTests.swift */,
 				D433028020583A4500AFA47F /* Info.plist */,
+				D4FE81D6206716E500BEFB80 /* CreateUserTests.swift */,
+				D4FE81D820671B3500BEFB80 /* DogLoverCreationTest.swift */,
 			);
 			path = "Pic-a-PupTests";
 			sourceTree = "<group>";
@@ -605,6 +603,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FE81D920671B3500BEFB80 /* DogLoverCreationTest.swift in Sources */,
+				D4FE81D7206716E500BEFB80 /* CreateUserTests.swift in Sources */,
 				D433027F20583A4500AFA47F /* Pic_a_PupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
