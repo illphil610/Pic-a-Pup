@@ -40,6 +40,8 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
         networkManager.delegate = self
         view.addVerticalGradientLayer(topColor: primaryColor,
                                       bottomColor: secondaryColor)
+        // Launch camera when this controller is created
+        launchCameraForController()
         
     }
     
