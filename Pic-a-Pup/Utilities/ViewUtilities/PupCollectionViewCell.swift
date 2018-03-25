@@ -14,8 +14,7 @@ class PupCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var pupCardImageView: UIImageView!
     
     override func awakeFromNib() {
-        pupCardImageView.layer.cornerRadius = 10
+        pupCardImageView.layer.cornerRadius = 20
         pupCardImageView.clipsToBounds = true
     }
-    
 }

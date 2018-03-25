@@ -18,7 +18,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-
     }
     
     @IBAction func handleLogOut(_ sender: UIButton) {
@@ -36,7 +35,32 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = recentSearchCollectionView.dequeueReusableCell(withReuseIdentifier: "pupCollectionViewCell", for: indexPath) as! PupCollectionViewCell
-        return cell
+        //cell.layer.cornerRadius = 20
+        //cell.layer.masksToBounds = true
         
+        //cell.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
+        
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.layer.shadowRadius = 20.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
+        
+        if (indexPath.row == 1) {
+            cell.pupCardImageView.image = UIImage(named: "funny-dog-8-e1500643440478")
+        } else if (indexPath.row == 2) {
+            cell.pupCardImageView.image = UIImage(named: "corgdashian-funny-picture-388x220")
+        } else if (indexPath.row == 3) {
+            cell.pupCardImageView.image = UIImage(named: "Funny-Dog-Face-During-Selfie")
+        } else if (indexPath.row == 4) { 
+            cell.pupCardImageView.image = UIImage(named: "maxresdefault")
+        } else if (indexPath.row == 5) {
+            cell.pupCardImageView.image = UIImage(named: "maxresdefault")
+        }
+        
+        return cell
     }
 }

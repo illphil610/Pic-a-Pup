@@ -58,9 +58,6 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
         picker.modalPresentationStyle = .popover
         present(picker, animated: true, completion: nil)
         picker.popoverPresentationController?.barButtonItem = sender
-        //cameraManager.launchPhotoLibrary(picker: picker)
-        //present(picker, animated: true, completion: nil)
-        //picker.popoverPresentationController?.barButtonItem = sender
     }
     
     @IBAction func launchCamera(_ sender: UIBarButtonItem) {
@@ -126,15 +123,13 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     func sendResponseJSONData(_ response: Any) {
         let json = JSON(response)
         
-        // parse for data, and send avail data to firebase manager to finish creating DogSearchResult and send to Firebase.  
-        
+        // parse for data, and send avail data to firebase manager to
+        // finish creating DogSearchResult and send to Firebase.
         print("\(json)")
         breedTypeLabel.text = json["breed"].string
         breedInfoTextField.text = json["breed_info"].string
-        
         //let breedType = json["breed"].string
         //let breedInfo = json["breed_info"].string
-        
         
         //if let location = currentUserCoordinateLocation {
           //  if let url = downloableUrlFromFirebase {

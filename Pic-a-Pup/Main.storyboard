@@ -418,39 +418,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-WK-hwz">
-                                <rect key="frame" x="304" y="44" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
-                                <connections>
-                                    <action selector="handleLogOut:" destination="vnq-hK-RH0" eventType="touchUpInside" id="nMG-9q-AGK"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-8D-pdA">
-                                <rect key="frame" x="0.0" y="82" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a8s-e5-VVh">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="50" id="a8s-e5-VVh">
                                     <size key="itemSize" width="320" height="350"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <size key="footerReferenceSize" width="10" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pupCollectionViewCell" id="zQf-Wy-DTX" customClass="PupCollectionViewCell" customModule="Pic_a_Pup" customModuleProvider="target">
-                                        <rect key="frame" x="54" y="0.0" width="267" height="299"/>
+                                        <rect key="frame" x="54" y="20" width="267" height="299"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="267" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PupImages%2F1521417989.67944" translatesAutoresizingMaskIntoConstraints="NO" id="bAL-1h-4NF">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen-shot-2017-09-17-at-10-14-47-pm" translatesAutoresizingMaskIntoConstraints="NO" id="bAL-1h-4NF">
                                                     <rect key="frame" x="0.0" y="0.0" width="267" height="298"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="bAL-1h-4NF" firstAttribute="top" secondItem="zQf-Wy-DTX" secondAttribute="topMargin" constant="-8" id="UVW-D6-7GT"/>
@@ -464,15 +456,26 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6X8-KN-whk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="vnq-hK-RH0" id="7hz-Bn-sOT"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-WK-hwz">
+                                <rect key="frame" x="304" y="26" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="handleLogOut:" destination="vnq-hK-RH0" eventType="touchUpInside" id="nMG-9q-AGK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="LLN-Pp-W04"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="gSx-kL-En9"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icons8-dog-house-26" id="gSx-kL-En9"/>
                     <connections>
                         <outlet property="recentSearchCollectionView" destination="CmI-8D-pdA" id="HAz-0N-11r"/>
                     </connections>
@@ -491,7 +494,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zIv-Yh-2QZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="QjG-Mh-f3L"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-dog-paw-filled" id="QjG-Mh-f3L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnA-Q3-wu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -575,7 +578,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ndP-f7-20h"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="xdy-2P-j72"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="icons8-camera-50" id="xdy-2P-j72"/>
                     <connections>
                         <outlet property="breedInfoTextField" destination="L3H-DA-icw" id="WGP-RK-Ew4"/>
                         <outlet property="breedTypeLabel" destination="UJW-3o-9bz" id="dJN-I1-C0d"/>
@@ -594,6 +597,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="vnq-hK-RH0" kind="relationship" relationship="viewControllers" id="TIw-hA-RfA"/>
@@ -607,8 +611,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PupImages%2F1521417989.67944" width="801" height="1068"/>
         <image name="backArrow" width="33" height="33"/>
+        <image name="icons8-camera-50" width="25" height="25"/>
+        <image name="icons8-dog-house-26" width="26" height="26"/>
+        <image name="icons8-dog-paw-filled" width="25" height="25"/>
         <image name="pap_gradient_text" width="1066" height="1066"/>
+        <image name="screen-shot-2017-09-17-at-10-14-47-pm" width="638" height="517"/>
     </resources>
 </document>
