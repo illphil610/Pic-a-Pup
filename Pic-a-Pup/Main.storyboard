@@ -426,15 +426,60 @@
                                     <action selector="handleLogOut:" destination="vnq-hK-RH0" eventType="touchUpInside" id="nMG-9q-AGK"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-8D-pdA">
+                                <rect key="frame" x="0.0" y="82" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a8s-e5-VVh">
+                                    <size key="itemSize" width="320" height="350"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pupCollectionViewCell" id="zQf-Wy-DTX" customClass="PupCollectionViewCell" customModule="Pic_a_Pup" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="267" height="299"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="267" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PupImages%2F1521417989.67944" translatesAutoresizingMaskIntoConstraints="NO" id="bAL-1h-4NF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="267" height="298"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="bAL-1h-4NF" firstAttribute="top" secondItem="zQf-Wy-DTX" secondAttribute="topMargin" constant="-8" id="UVW-D6-7GT"/>
+                                            <constraint firstItem="bAL-1h-4NF" firstAttribute="leading" secondItem="zQf-Wy-DTX" secondAttribute="leadingMargin" constant="-8" id="soW-O8-qPX"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="bAL-1h-4NF" secondAttribute="bottom" constant="-7" id="tl1-nl-lag"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="bAL-1h-4NF" secondAttribute="trailing" constant="-8" id="ylM-Uj-os9"/>
+                                        </constraints>
+                                        <size key="customSize" width="267" height="299"/>
+                                        <connections>
+                                            <outlet property="pupCardImageView" destination="bAL-1h-4NF" id="uBI-24-A7Y"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vnq-hK-RH0" id="7hz-Bn-sOT"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="LLN-Pp-W04"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="gSx-kL-En9"/>
+                    <connections>
+                        <outlet property="recentSearchCollectionView" destination="CmI-8D-pdA" id="HAz-0N-11r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nE-Wg-ciN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5361" y="-882"/>
+            <point key="canvasLocation" x="5360.8000000000002" y="-882.26600985221683"/>
         </scene>
         <!--Profile-->
         <scene sceneID="nsj-Zq-UZU">
@@ -562,6 +607,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="PupImages%2F1521417989.67944" width="801" height="1068"/>
         <image name="backArrow" width="33" height="33"/>
         <image name="pap_gradient_text" width="1066" height="1066"/>
     </resources>
