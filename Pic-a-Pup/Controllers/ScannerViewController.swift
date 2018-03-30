@@ -12,7 +12,7 @@ import AVFoundation
 
 class ScannerViewController: UIViewController {
     
-    @IBOutlet var messageLabel:UILabel!
+    @IBOutlet var messageLabel: UILabel!
     @IBOutlet var topbar: UIView!
     
     var captureSession = AVCaptureSession()
@@ -64,7 +64,8 @@ class ScannerViewController: UIViewController {
         // Move the message label and top bar to the front
         //view.bringSubview(toFront: messageLabel)
         view.bringSubview(toFront: topbar)
-        
+        view.bringSubview(toFront: messageLabel)
+    
         // Initialize QR Code Frame to highlight the QR code
         qrCodeFrameView = UIView()
         
@@ -102,8 +103,7 @@ extension ScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             
             if metadataObj.stringValue != nil {
                 //launchApp(decodedURL: metadataObj.stringValue!)
-                //messageLabel.text = metadataObj.stringValue
-                //print(metadataObj.stringValue)
+                messageLabel.text = metadataObj.stringValue
             }
         }
     }

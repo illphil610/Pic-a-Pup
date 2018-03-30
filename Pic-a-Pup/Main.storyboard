@@ -669,7 +669,7 @@
                                     <constraint firstAttribute="height" constant="40" id="eSA-g0-n20"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -686,7 +686,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Collar" image="icons8-qr-code-24 2" id="f6U-lJ-XU4"/>
                     <connections>
-                        <outlet property="messageLabel" destination="C3U-c5-sli" id="CUc-1b-1cM"/>
+                        <outlet property="messageLabel" destination="C3U-c5-sli" id="CLF-Ya-Q18"/>
                         <outlet property="topbar" destination="1K3-Jv-krW" id="QM4-7N-5AS"/>
                     </connections>
                 </viewController>
