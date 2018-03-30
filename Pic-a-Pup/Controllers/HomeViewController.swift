@@ -35,7 +35,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = recentSearchCollectionView.dequeueReusableCell(withReuseIdentifier: "pupCollectionViewCell", for: indexPath) as! PupCollectionViewCell
-        //cell.layer.cornerRadius = 20
+        cell.layer.cornerRadius = 20
         //cell.layer.masksToBounds = true
         
         //cell.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
@@ -62,5 +62,14 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath as IndexPath) as! SectionHeaderCollectionReusableView
+        
+        header.headerLabel.text = "Pic-a-Pups"
+        
+        return header
     }
 }

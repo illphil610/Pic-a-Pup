@@ -11,9 +11,11 @@ import UIKit
 import CoreMotion
 
 class PupCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var pupCardImageView: UIImageView!
     
     override func awakeFromNib() {
+        super.awakeFromNib()
         pupCardImageView.layer.cornerRadius = 20
         pupCardImageView.clipsToBounds = true
     }

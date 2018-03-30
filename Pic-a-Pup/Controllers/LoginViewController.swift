@@ -115,6 +115,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.dismiss(animated: false, completion: nil)
                 } else {
                     print("Error logging in \(String(describing: error?.localizedDescription))")
+                    let alertMessage = UIAlertController(title: "Invalid Email", message: "Please check the entered email address", preferredStyle: .alert)
+                    alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        alertMessage.dismiss(animated: true, completion: nil)
+                        self.activityView.stopAnimating()
+                    }))
+                    self.present(alertMessage, animated: true, completion: nil)
                 }
             }
         }

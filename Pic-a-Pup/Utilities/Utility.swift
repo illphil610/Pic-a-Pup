@@ -30,9 +30,6 @@ class Utility: NSObject, CLLocationManagerDelegate  {
         return passwordTest.evaluate(with: password)
     }
     
-    
-    
-    
     // Location delegate stuff
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()

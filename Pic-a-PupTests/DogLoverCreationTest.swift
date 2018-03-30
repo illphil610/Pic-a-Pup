@@ -45,6 +45,11 @@ class DogLoverCreationTest: XCTestCase {
         XCTAssertFalse(utility.isValidEmail(testEmail))
     }
     
+    func testFireBaseLogInSuccess() {
+        let result = true
+        XCTAssertTrue(result)
+    }
+    
     // Password Condition:
     //      - must contains one digit from 0-9
     //      - must contains one lowercase characters

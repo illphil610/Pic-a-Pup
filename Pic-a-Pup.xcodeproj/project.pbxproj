@@ -29,6 +29,8 @@
 		D467C91A205B1FF800817CD0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C919205B1FF800817CD0 /* Dog.swift */; };
 		D467C91C205B200700817CD0 /* DogSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C91B205B200700817CD0 /* DogSearchResult.swift */; };
 		D467C91E205B201500817CD0 /* ModelSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467C91D205B201500817CD0 /* ModelSearchRequest.swift */; };
+		D47A2356206D9AFE007261E3 /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47A2355206D9AFE007261E3 /* SectionHeaderCollectionReusableView.swift */; };
+		D47A2358206DE77C007261E3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47A2357206DE77C007261E3 /* ScannerViewController.swift */; };
 		D4806D49205B0A6100EB9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4806D48205B0A6100EB9742 /* Main.storyboard */; };
 		D4806D4F205B0F6100EB9742 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D4E205B0F6100EB9742 /* User.swift */; };
 		D4806D51205B109400EB9742 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4806D50205B109400EB9742 /* Utility.swift */; };
@@ -89,6 +91,8 @@
 		D467C919205B1FF800817CD0 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		D467C91B205B200700817CD0 /* DogSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSearchResult.swift; sourceTree = "<group>"; };
 		D467C91D205B201500817CD0 /* ModelSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearchRequest.swift; sourceTree = "<group>"; };
+		D47A2355206D9AFE007261E3 /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		D47A2357206DE77C007261E3 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		D4806D48205B0A6100EB9742 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D4806D4E205B0F6100EB9742 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D4806D50205B109400EB9742 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 			children = (
 				D44266102067323B00D0F081 /* BaseRoundedCardCell.swift */,
 				D44266122067356700D0F081 /* PupCollectionViewCell.swift */,
+				D47A2355206D9AFE007261E3 /* SectionHeaderCollectionReusableView.swift */,
 			);
 			path = ViewUtilities;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				D4E6D4BE205B8055000D5C0F /* HomeViewController.swift */,
 				D45CAF7E205C82C50093C82B /* CameraViewController.swift */,
 				D44C6D7C2065D3A500418B18 /* ProfileViewController.swift */,
+				D47A2357206DE77C007261E3 /* ScannerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -592,10 +598,12 @@
 			files = (
 				D4806D55205B11EF00EB9742 /* LoginViewController.swift in Sources */,
 				D467C912205B1D3600817CD0 /* SignUpViewController.swift in Sources */,
+				D47A2356206D9AFE007261E3 /* SectionHeaderCollectionReusableView.swift in Sources */,
 				D44C6D7D2065D3A500418B18 /* ProfileViewController.swift in Sources */,
 				D4806D51205B109400EB9742 /* Utility.swift in Sources */,
 				D467C918205B1FE300817CD0 /* DogLover.swift in Sources */,
 				D4806D53205B114200EB9742 /* RoundedWhiteButton.swift in Sources */,
+				D47A2358206DE77C007261E3 /* ScannerViewController.swift in Sources */,
 				D4E6D4BF205B8055000D5C0F /* HomeViewController.swift in Sources */,
 				D467C91E205B201500817CD0 /* ModelSearchRequest.swift in Sources */,
 				D467C91A205B1FF800817CD0 /* Dog.swift in Sources */,
